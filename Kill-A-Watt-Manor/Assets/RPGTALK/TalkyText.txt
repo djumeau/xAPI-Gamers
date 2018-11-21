@@ -1,0 +1,80 @@
+<b>A</b> key moves Left, <b>D</b> key right and <b>Spacebar</b> jumps. <b>Enter</b> advances dialog.
+Your KnowledgeBeam got a powerup!  <b>O</b> key shoots.
+Tameca: What happened?
+xAPIdude: <b>You were an electro-hogg until my KnowledgeBeam hit you.</b>
+Tameca: But I wasn't playing video games or anything.
+xAPIdude: <b>Even in Standby Mode, electronics can consume 5-10% of your house's energy!</b>
+Tameca:  I have a question. If it works, it will generate an xAPI statement.
+xAPIdude: <b>What are you talking about?</b>
+Tameca: [question=0] Did you already know electronics in Standby Mode can use up 10% of your house's energy?
+[choice]Yes I did
+[choice]I learned it just now.
+Tameca: [question=1]Are you going to unplug your idle electronics?
+[choice]I will now.
+[choice]Nah, too convenient.
+Tameca: I'm unplugging this surge protector, it'll kill the entertainment center and the mag-lock on the living room door.
+Tameca: Please help my family.
+Devon: Thanks for un-piggifying me!
+xAPIdude: No problem Devon.
+Devon: It's pronounced Devon.
+xAPIdude: Sorry, Devon. What happened?
+Devon: I was just standing here with the fridge door open, trying to decide what to eat.
+Devon: When along comes this big scary dude and zaps me into a pig!
+xAPIdude: Well, you were acting like an electro-hogg with the door to the fridge open.
+Devon: Here's where you give me my energy conservation tips, right?
+xAPIdude: Exactly! Your fridge consumes 7% of your house's energy.
+xAPIdude: The optimum settings are 37-40 degrees Farhenheit for the fridge, and 0-5 degrees for the freezer.
+Devon: That's 2.8 to 4.4 degrees Celsius for the fridge and -18 to -15 degrees for the freezer.
+xAPIdude: You're a gifted mathmetician.
+xAPIdude: Also you can limit the amount of time the door is open, and let hot food cool before placing it in.
+Devon: [question=2]Which are you most likely to try after playing this game?
+[choice]Reset my fridge temperature
+[choice]Let food cool first
+[choice]Limit open fridge time
+[choice]All of them!
+[choice]I'll probably forget to do any.
+Devon: I've got an upgrade to your KnowledgeBeam.  They are called TruthBombs. <b>K</b> key shoots them.
+xAPIdude: Devon, rock on little dude!
+Patrick: Ah thank goodness!  That giant pig man came for my family!
+xAPIdude: He turned you into an electro-hogg.  Long hot showers?
+Patrick: That's where I get my thinking done.
+xAPIdude: Water heating accounts for about 18% of your home's energy use!
+Patrick: What can I do?
+xAPIdude: [question=3] Which of these seem the best to you?
+[choice] Get a shower timer for <5 minute showers
+[choice] Install low-flow showerheads and faucets
+[choice] Turn down the water heater's thermostat
+Patrick: This double-jump should help you rescue my wife!
+xAPIdude: Count on it, Patrick!
+Tonya: Whew!
+xAPIdude: Are you alright?
+Tonya: Good thing for you this is a minimum viable product!
+xAPIdude: Umm, what?
+Tonya: If I'd have had my enemy AI state machine running, I'd have tore you up!
+xAPIdude: I don't get it.
+Tonya: Anyway thanks for rescuing me, Sugar.
+xAPIdude: My pleasure, you know, heating and cooling your home consumes the most energy!
+Tonya: Oh yeah?
+xAPIdude: [question=4] Try 42% of your utility bill.  Which of these options sounds good to you?
+[choice] Turn the furnace down as low as you can stand in the winter
+[choice] Get a programmable thermostat to drop temp while you're out
+[choice] For cooling, use south facing drapes during day
+Tonya: Now I've got an option for you.  This missile upgrade for your KnowledgeBeam will get you through that red door to my husband's man-cave. <b>P</b> key to fire.
+xAPIdude: Who's in there?
+Tonya: Well, when the full game is in beta it will be Baron Piggfried Von Snoutt!  But right now it's probably something lame.
+xAPIdude: You keep talking but your words make no sense to me.
+Tonya: Oh I get it, can't break the fourth wall, huh?
+Boss Room: [question=5] Which appliance will make the most impact on your energy use?
+[choice] Electronics
+[choice] Fridge
+[choice] Hot Water Heater
+[choice] Furnace
+Boss Room: [question=6] Which of these are you most likely to do after this game?
+[choice] Use a shower timer
+[choice] Unplug my Electronics in Standby Mode
+[choice] Turn down my Hot Water Heater
+[choice] Get a programmable thermostat
+Boss Room: [question=7] How was the jumping?
+[choice] I like a challenge!
+[choice] Infuriating!
+Boss Room: Thanks for playing!
