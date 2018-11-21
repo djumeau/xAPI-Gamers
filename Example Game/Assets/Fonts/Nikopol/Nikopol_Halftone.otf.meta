@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: eaf165d0624259649adbd6f7b0d89ad6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nikopol
+  fontNames:
+  - Nikopol
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d5d515d9ab90b354f9fe6970a1d90525, type: 3}
+  - {fileID: 12800000, guid: d779322adb5d0d04fbdb4d8fcf54fcba, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
