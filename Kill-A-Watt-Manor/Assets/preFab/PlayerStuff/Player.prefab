@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 212650387442717770}
   - component: {fileID: 114925512238230640}
   - component: {fileID: 114181854406594366}
-  - component: {fileID: 114513575285717872}
+  - component: {fileID: 114068693960500630}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -275,6 +275,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114068693960500630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1815945128394376}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c85e0781d396ca418e9906a7b3518a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4149305588321730}
+  missilePrefab: {fileID: 1459012950190770, guid: 273b2b5bbbc10eb4a8a1efc6eef52a83,
+    type: 2}
 --- !u!114 &114181854406594366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -307,6 +321,8 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 1847
+  extraJumps: 0
+  extraJumpsValue: 0
 --- !u!114 &114462349536933804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,24 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats:
     Health: 100
---- !u!114 &114513575285717872
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815945128394376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8cc9bafa22bf3a44bcf837723777b17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 600
-  groundCheck: {fileID: 4600822901896828}
-  checkRadius: 0.2
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!114 &114518889105372188
 MonoBehaviour:
   m_ObjectHideFlags: 1

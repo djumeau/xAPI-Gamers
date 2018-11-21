@@ -41,7 +41,7 @@ public class TruthBomb : MonoBehaviour {
         Collider2D[] objectsToDamage = Physics2D.OverlapCircleAll(transform.position, areaOfEffect, whatIsDestructible);
 
         for (int i = 0; i < objectsToDamage.Length; i++)
-        {
+        {  
             objectsToDamage[i].GetComponent<DestructibleEnvi>().health -= damage;            
         }
 

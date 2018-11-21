@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class talkytalkyboss : MonoBehaviour
 {
-
+    public BoxCollider2D collider;
     public RPGTalk rpgtalk;
 
 
-    public void Start()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (rpgtalk != null)
+        if (other.tag == "Player")
         {
-            rpgtalk.NewTalk();
+            if (rpgtalk != null)
+            {
+                rpgtalk.NewTalk();
+            }
         }
+              
 
     }
 
