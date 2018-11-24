@@ -26,6 +26,7 @@ public class ItemPickUp : MonoBehaviour {
             gm.IncreaseScore(pointValue);
             FindObjectOfType<AudioManager>().Play("item_pick_up");
             Destroy(this.gameObject);
+            GBL_Interface.SendItemPick();
         }
     }
 
