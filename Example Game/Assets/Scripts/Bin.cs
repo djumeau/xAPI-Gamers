@@ -23,6 +23,7 @@ public class Bin : MonoBehaviour {
             hasCollided = true;
             FindObjectOfType<AudioManager>().Play("bin");
             gm.ShowInventory();
+            GBL_Interface.SendTrash();
 
         }
     }
