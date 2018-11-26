@@ -71,6 +71,11 @@ public class Inventory
         return inventoryList.Find(item => item.GetItemName() == itemName);
     }
 
+    public Item GetLastInventoryItem()
+    {
+        return inventoryList[inventoryList.Count - 1];
+    }
+
     public void RemoveItem(int id)
     {
         Item targetItem = GetInventoryItem(id);

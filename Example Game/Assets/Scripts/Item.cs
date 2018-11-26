@@ -15,7 +15,7 @@ public class Item {
         this.Name = name;
         this.Type = type;
         this.Points = points;
-        this.icon = Resources.Load<Sprite>("Images/Sprites/Items/" + name + ".png");
+        this.icon = Resources.Load<Sprite>("Sprites/Items/" + name.ToLower());
     }
 
     public string GetItemName()
