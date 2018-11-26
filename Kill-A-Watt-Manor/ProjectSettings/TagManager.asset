@@ -13,6 +13,7 @@ TagManager:
   - Reflection
   - FlashLight
   - GM
+  - Pigbrick
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Enemy
   - Player
   - Background
-  - 
+  - Pigbrick
   - 
   - 
   - 

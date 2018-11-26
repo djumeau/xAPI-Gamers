@@ -2,16 +2,16 @@ fileFormatVersion: 2
 guid: 7680692182e439540a621bac058ccaf0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Piggy_eat1
-    21300002: Piggy_eat2
-    21300004: Piggy_eat3
-    21300006: Piggy_eat4
-    21300008: Piggy_run1
-    21300010: Piggy_run2
-    21300012: Piggy_run3
-    21300014: Piggy_run4
-    21300016: Piggy_run5
-    21300018: Piggy_run6
+    21300000: Piggy_eat_0
+    21300002: Piggy_eat_1
+    21300004: Piggy_eat_2
+    21300006: Piggy_eat_3
+    21300008: Piggy_Run_0
+    21300010: Piggy_Run_1
+    21300012: Piggy_Run_2
+    21300014: PPiggy_Run_3
+    21300016: Piggy_Run_4
+    21300018: Piggy_Run_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -91,6 +91,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -105,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Piggy_eat1
+      name: Piggy_eat_0
       rect:
         serializedVersion: 2
         x: 47
@@ -119,17 +130,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 314487324e3751b4781f2b053bf26d55
+      spriteID: dee5d8c198b260e47b604ca2834d3f55
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_eat2
+      name: Piggy_eat_1
       rect:
         serializedVersion: 2
         x: 496
-        y: 833
+        y: 831
         width: 320
         height: 250
       alignment: 7
@@ -139,17 +150,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99b40974cace98247a76768e086c8ab0
+      spriteID: 1b0fd9b10d19fa14f8a68b2887ec809e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_eat3
+      name: Piggy_eat_2
       rect:
         serializedVersion: 2
         x: 947
-        y: 827
+        y: 828
         width: 345
         height: 256
       alignment: 7
@@ -159,17 +170,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60113f69470ca474c8a10b15f3258531
+      spriteID: fc2a70908b8476a4496bccebee9de786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_eat4
+      name: Piggy_eat_3
       rect:
         serializedVersion: 2
         x: 1406
-        y: 826
+        y: 827
         width: 337
         height: 281
       alignment: 7
@@ -179,13 +190,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7862afa36d3c6e44a57e1147bd28ba8
+      spriteID: dc66900c66263b940be5c0491c895e81
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run1
+      name: Piggy_Run_0
       rect:
         serializedVersion: 2
         x: 924
@@ -199,17 +210,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e46d0fe82eb95d42ac3059f5023b9c9
+      spriteID: 72ef8177882098d4084df166ad7ea5a5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run2
+      name: Piggy_Run_1
       rect:
         serializedVersion: 2
         x: 1388
-        y: 379
+        y: 378
         width: 348
         height: 315
       alignment: 7
@@ -219,13 +230,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 356003b21e60b9b48ae11fdb075ff506
+      spriteID: c18a09d94a36f2b47b7dd7f6f7adf8ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run3
+      name: Piggy_Run_2
       rect:
         serializedVersion: 2
         x: 39
@@ -239,19 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1245c2d2b47974c48813407d7f618b3e
+      spriteID: b62bb9e02b045c747b301d32d488ac22
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run4
+      name: PPiggy_Run_3
       rect:
         serializedVersion: 2
         x: 508
-        y: 50
+        y: 2
         width: 327
-        height: 325
+        height: 375
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,19 +270,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c334c43746c874847ba1382014468cbe
+      spriteID: 5689d5d5773d94c45b30df37505297c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run5
+      name: Piggy_Run_4
       rect:
         serializedVersion: 2
         x: 940
-        y: 29
+        y: 2
         width: 333
-        height: 331
+        height: 356
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,13 +290,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 856db70a169c2ce459badf41ff7854c9
+      spriteID: a0b916ad11d45634fb83ae067fcc3e0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Piggy_run6
+      name: Piggy_Run_5
       rect:
         serializedVersion: 2
         x: 1365
@@ -299,7 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0cbbc989294a7f4c96324740055e6a4
+      spriteID: 4a02afeecb9441e4596e5226e0c83fdb
       vertices: []
       indices: 
       edges: []
@@ -307,7 +318,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a077062899b529440a18d0baa12358ce
+    spriteID: 3159e30fe804bdf459496eecf4a6f922
     vertices: []
     indices: 
     edges: []

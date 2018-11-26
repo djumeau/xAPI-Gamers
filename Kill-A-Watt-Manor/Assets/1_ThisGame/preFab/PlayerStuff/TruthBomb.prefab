@@ -117,7 +117,7 @@ MonoBehaviour:
   areaOfEffect: 1
   whatIsDestructible:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 16384
 --- !u!212 &212105138684023972
 SpriteRenderer:
   m_ObjectHideFlags: 1
