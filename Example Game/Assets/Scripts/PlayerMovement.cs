@@ -5,19 +5,64 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public CharacterController2D controller;
+    [SerializeField]
+    private Animator animator;
+
+    public float runSpeed = 60.0f;
+
     private float horizontalMove = 0f;
-    public float runSpeed = 45f;
     private bool jump = false;
 
-	// Update is called once per frame
-	void Update () {
+    private Vector3 respawnPosition;
+    private bool isRespawningPlayer = false;
+
+    private void Awake()
+    {
+        respawnPosition = this.transform.position;
+        Debug.Log("Position of player [" + respawnPosition);
+    }
+
+    private void RespawnPlayer()
+    {
+        Debug.Log("Respawn player");
+        isRespawningPlayer = true;
+        this.transform.position = respawnPosition;
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FallDetector" && !isRespawningPlayer)
+        {
+            Debug.Log("Hit Fall Detector");
+            RespawnPlayer();
+        } else {
+            isRespawningPlayer = false;
+        }
+    }
+
+    // Update is called once per frame
+    void Update() {
+
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        animator.SetFloat("PlayerSpeed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-        };
+            // Debug.Log("Jumping");
+            FindObjectOfType<AudioManager>().Play("jump");
+            animator.SetBool("IsJumping", true);
+        }
+
 	}
+
+    public void OnLanding()
+    {
+        // Debug.Log("Landing.");
+        animator.SetBool("IsJumping", false);
+    }
 
     private void FixedUpdate()
     {
