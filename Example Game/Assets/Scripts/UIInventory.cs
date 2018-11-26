@@ -21,19 +21,19 @@ public class UIInventory : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-       //  Debug.Log("[Start] ... Show List ...");
-
+       
         inventory = gm.GetInventory();
 
         if (inventory != null)
             inventory.OnListChangedCallback += UpdateUI;
 
+        Debug.Log("[Start] ... Show List ...");
+        UpdateUI();
+
     }
 
     void UpdateUI()
     {
-
-        GameObject NewButton = null;
 
         Debug.Log("[UIInventory/UpdateUI] Inventory count :" + inventory.GetTotalItems());
 
@@ -42,32 +42,70 @@ public class UIInventory : MonoBehaviour {
             Debug.LogWarning("Prefab not assigned.");
         } else
         {
+            //Find out how many children...
 
-            NewButton = Object.Instantiate(Prefab) as GameObject;
-
-            if (NewButton == null)
+            if (inventory.GetTotalItems() != itemsParent.childCount)
             {
-                Debug.LogWarning("Error: NewButton not created.");
-
-            } else {
-
-                if (itemsParent == null)
-                {
-                    Debug.LogWarning("Error: itemsParent not assigned.");
-                } else
-                {
-                    NewButton.transform.SetParent(itemsParent, false);
-                    originalPosition = NewButton.transform.localPosition;
-                    NewButton.SetActive(true);
-
-                    if (ReferenceUI.activeSelf)
-                        StartCoroutine(AdjustTransformAtEndOfFrame(NewButton));
-                }
 
             }
 
+            Debug.Log("# of children [" + itemsParent.childCount + "]");
+
+            // AddItemButton();
+
         }
                
+    }
+
+    private void AddItemButton(int ItemId)
+    {
+        if (ItemId != null)
+            Debug.Log("Add Button [" + ItemId + "]");
+
+        GameObject NewButton = null;
+
+        NewButton = Object.Instantiate(Prefab) as GameObject;
+
+        if (NewButton == null)
+        {
+            Debug.LogWarning("Error: NewButton not created.");
+
+        }
+        else
+        {
+
+            Debug.Log("ItemsParent [" + "]");
+
+            if (itemsParent == null)
+            {
+                Debug.LogWarning("Error: itemsParent not assigned.");
+            }
+            else
+            {
+                // Need reference to ItemButton
+                ItemButton btn = NewButton.GetComponent<ItemButton>();
+
+                if (btn != null)
+                {
+                    //Assign Item data to Button
+                    Item ItemObject = inventory.GetLastInventoryItem();
+                    btn.UpdateButton(ItemObject);
+                }
+                else
+                {
+                    Debug.LogWarning("Reference to ItemButton not found.");
+                }
+
+
+                NewButton.transform.SetParent(itemsParent, false);
+                originalPosition = NewButton.transform.localPosition;
+                NewButton.SetActive(true);
+
+                if (ReferenceUI.activeSelf)
+                    StartCoroutine(AdjustTransformAtEndOfFrame(NewButton));
+            }
+
+        }
     }
 
     private IEnumerator AdjustTransformAtEndOfFrame(GameObject someGameObject)

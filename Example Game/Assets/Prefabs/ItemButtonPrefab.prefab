@@ -58,8 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc71fcba14e3254468adc4a69dd5b67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 114177772960907872}
-  iconImage: {fileID: 114767126100589706}
+  Button: {fileID: 114177772960907872}
+  IconImage: {fileID: 114767126100589706}
 --- !u!114 &114177772960907872
 MonoBehaviour:
   m_ObjectHideFlags: 1

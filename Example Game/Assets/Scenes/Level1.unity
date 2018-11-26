@@ -1867,6 +1867,15 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1107241924690618, guid: b914d2522f3fee142b0952f15d999f29, type: 2}
+      propertyPath: m_Name
+      value: Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932461212765452, guid: b914d2522f3fee142b0952f15d999f29,
+        type: 2}
+      propertyPath: itemName
+      value: Water_Bottle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b914d2522f3fee142b0952f15d999f29, type: 2}
   m_IsPrefabAsset: 0
@@ -5053,7 +5062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1125595692
 RectTransform:
   m_ObjectHideFlags: 0
