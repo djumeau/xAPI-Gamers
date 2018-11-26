@@ -55,11 +55,11 @@ xAPIdude: I don't get it.
 Tonya: Anyway thanks for rescuing me, Sugar.
 xAPIdude: My pleasure, you know, heating and cooling your home consumes the most energy!
 Tonya: Oh yeah?
-xAPIdude: [question=4] Try 42% of your utility bill.  Which of these options sounds good to you?
-[choice] Turn the furnace down as low as you can stand in the winter
-[choice] Get a programmable thermostat to drop temp while you're out
-[choice] For cooling, use south facing drapes during day
-Tonya: Now I've got an option for you.  This missile upgrade for your KnowledgeBeam will get you through that red door to my husband's man-cave. <b>P</b> key to fire.
+xAPIdude: [question=4] Try 42% of your utility bill.  Which option sounds good?
+[choice] Turn the furnace down as low as you can stand
+[choice] Get a programmable thermostat
+[choice] Cool with south-facing drapes during day
+Tonya: Hey, this missile upgrade will get you into my husband's man-cave. <b>P</b> key to fire.
 xAPIdude: Who's in there?
 Tonya: Well, when the full game is in beta it will be Baron Piggfried Von Snoutt!  But right now it's probably something lame.
 xAPIdude: You keep talking but your words make no sense to me.
@@ -77,4 +77,5 @@ Boss Room: [question=6] Which of these are you most likely to do after this game
 Boss Room: [question=7] How was the jumping?
 [choice] I like a challenge!
 [choice] Infuriating!
+[choice] Easy
 Boss Room: Thanks for playing!

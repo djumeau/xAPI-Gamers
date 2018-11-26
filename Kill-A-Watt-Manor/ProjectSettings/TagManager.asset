@@ -5,14 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
-  - FlashLight
-  - Enemy
-  - Wall
   - Platform
-  - Reflection
-  - GM
+  - Wall
   - Particle
   - Missile
+  - Enemy
+  - Reflection
+  - FlashLight
+  - GM
   layers:
   - Default
   - TransparentFX
@@ -28,7 +28,7 @@ TagManager:
   - Enemy
   - Player
   - Background
-  - Pigbrick
+  - 
   - 
   - 
   - 
@@ -48,23 +48,23 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 1292802371
+    uniqueID: 1186688481
     locked: 0
   - name: Ground
-    uniqueID: 3915561945
+    uniqueID: 1575266023
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Enemy
-    uniqueID: 4056420645
+    uniqueID: 1572004557
     locked: 0
   - name: Player
-    uniqueID: 941913681
+    uniqueID: 1487223945
     locked: 0
   - name: Fire
     uniqueID: 3804908061
     locked: 0
   - name: Foreground
-    uniqueID: 195343665
+    uniqueID: 2608737897
     locked: 0

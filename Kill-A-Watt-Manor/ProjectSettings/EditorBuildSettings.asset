@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/1_ThisGame/Scenes_ThisGame/OpeningScene.unity
+    guid: e5f96fc12dfa2f44cbe9b0498081404d
+  - enabled: 1
+    path: Assets/1_ThisGame/Scenes_ThisGame/EveryLightInTheMansion.unity
+    guid: de76e572a002e5947bcade2f3fe92e54
+  m_configObjects: {}
