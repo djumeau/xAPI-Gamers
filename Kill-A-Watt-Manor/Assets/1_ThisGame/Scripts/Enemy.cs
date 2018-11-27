@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        GBL_Interface.SendKilled();
         
     }
 }
