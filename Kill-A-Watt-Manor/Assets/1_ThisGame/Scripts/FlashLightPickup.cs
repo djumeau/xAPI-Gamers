@@ -13,12 +13,17 @@ public class FlashLightPickup : MonoBehaviour {
         audioSourcePickup = GetComponent<AudioSource>();  
     }
 
+    bool gotFlashlight;
+
     void OnTriggerEnter2D(Collider2D other)
       {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && !gotFlashlight)
         {
+            gotFlashlight = true;
             audioSourcePickup.PlayOneShot(pickupSound, 0.7f);
-            StartCoroutine(FLPickup(other));                        
+            GBL_Interface.SendFlashlightPick();
+            StartCoroutine(FLPickup(other));
+
         }
       }
 
@@ -29,6 +34,7 @@ public class FlashLightPickup : MonoBehaviour {
         Weapon weapon = player.GetComponent<Weapon>();
         weapon.flashlightPower += FlashLightPowerUp;
 
+
         Animator playerAnimator = player.GetComponent<Animator>();
         playerAnimator.SetBool("Pickup", true);
 
@@ -38,6 +44,7 @@ public class FlashLightPickup : MonoBehaviour {
 
                 
         Destroy(gameObject);
+
     }
 
 }

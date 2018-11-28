@@ -31,6 +31,7 @@ public class GameMaster : MonoBehaviour
     public static void KillPlayer (Player player)
     {
         Destroy(player.gameObject);
+        GBL_Interface.SendDied();
         gm.StartCoroutine (gm.RespawnPlayer());
     }
 

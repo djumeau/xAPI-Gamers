@@ -39,6 +39,10 @@ public class DoorOpener : MonoBehaviour
             blocker.isTrigger = true;
             audioDoor.PlayOneShot(openCreak, 0.7f);
             alreadyPlayed = true;
+            GBL_Interface.SendNpcDaughter();
+            GBL_Interface.SendUnplug();
+            GBL_Interface.SendDoorUnlock();
+            GBL_Interface.SendUnplugDone();
         }
         
         
