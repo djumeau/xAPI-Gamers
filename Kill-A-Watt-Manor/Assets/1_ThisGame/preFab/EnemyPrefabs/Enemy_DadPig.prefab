@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  pigPower: 6
+  pigPower: 3
   enemyReflectionPoint: {fileID: 4213043377527306}
   linePigRenderer: {fileID: 120464871723063208}
-  deathEffect: {fileID: 1038215222148856, guid: 5f572f8df6a6756459a554d842665f11,
+  deathEffect: {fileID: 1801172310863926, guid: dc8bbb6ed963a9847a5ee65c59cd0f41,
     type: 2}
   particle: {fileID: 0}
   rpgtalk: {fileID: 0}
