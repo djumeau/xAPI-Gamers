@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212746193631436098}
   - component: {fileID: 95246113782595646}
   - component: {fileID: 82841274155033268}
+  - component: {fileID: 114671991567202722}
   m_Layer: 11
   m_Name: RightSizedPigDestroyEffect
   m_TagString: Untagged
@@ -155,6 +156,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114671991567202722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038215222148856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720a7c8f58375fa42af08eb3870bc3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 1038215222148856}
 --- !u!212 &212746193631436098
 SpriteRenderer:
   m_ObjectHideFlags: 1

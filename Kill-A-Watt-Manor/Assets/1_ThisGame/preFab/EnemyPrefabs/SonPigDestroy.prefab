@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212193829392699138}
   - component: {fileID: 95163470056678732}
   - component: {fileID: 82768338758775422}
+  - component: {fileID: 114999422366598646}
   m_Layer: 0
   m_Name: SonPigDestroy
   m_TagString: Untagged
@@ -155,6 +156,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114999422366598646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000814583261648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720a7c8f58375fa42af08eb3870bc3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 1000814583261648}
 --- !u!212 &212193829392699138
 SpriteRenderer:
   m_ObjectHideFlags: 1
